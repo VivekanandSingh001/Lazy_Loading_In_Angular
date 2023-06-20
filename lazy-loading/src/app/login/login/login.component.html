@@ -1,0 +1,17 @@
+<div class="login-container">
+    <h2>Login</h2>
+    <form [formGroup]="loginForm" autocomplete="off" (ngSubmit)="loginform()">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input formControlName="email" autocomplete="new-email" type="email" id="email" name="email"  >
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input formControlName="password" autocomplete="new-password" type="password" id="password" name="password" >
+      </div>
+      
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  
