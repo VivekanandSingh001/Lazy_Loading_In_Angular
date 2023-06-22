@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signUpUsers": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "fullName": "abc",
+      "email": "a@abc.com",
+      "password": "1234",
+      "mobile": "09324129480",
+      "id": 2
+    },
+    {
+      "fullName": "",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

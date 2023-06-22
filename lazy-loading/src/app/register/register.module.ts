@@ -4,6 +4,7 @@ import { FormGroup,FormBuilder, FormsModule, ReactiveFormsModule } from '@angula
 import { RegisterRoutingModule } from './register-routing.module';
 import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http';
+import { authGuard } from '../auth.guard';
 
 console.log("This is Register Module")
 
@@ -16,6 +17,6 @@ console.log("This is Register Module")
     RegisterRoutingModule,
     ReactiveFormsModule,
     HttpClientModule
-  ]
+  ],
 })
 export class RegisterModule { }
