@@ -6,11 +6,11 @@
     <div class="welcome-info">
         <h3 class="welcome-home1">About Us</h3>
     </div>
-    <div class="welcome-contact" [routerLink]="['/contact']">
-        <h3 class="welcome-contact1">Contact</h3>
+    <div class="welcome-contact" (click)="prod()">
+        <h3 class="welcome-contact1">Product</h3>
     </div>
-    <div class="welcome-home" [routerLink]="['/home']">
-        <h3 class="welcome-info1">Home</h3>
+    <div class="welcome-home" [routerLink]="['/category/Category']">
+        <h3 class="welcome-info1">Category</h3>
     </div>
 </div>
   </header>

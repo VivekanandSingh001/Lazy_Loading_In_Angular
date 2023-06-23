@@ -6,12 +6,13 @@ import { ExclusiveService } from '../exclusive.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit{
-exclusive:boolean=false;
-constructor(private exc:ExclusiveService){}
+export class HeaderComponent implements OnInit {
+  exxclusive: boolean = false;
+  constructor(public exc: ExclusiveService) { }
   ngOnInit() {
-    this.exc.exclusive.subscribe(res=>{
-      this.exclusive=res
+    this.exc.exclusive.subscribe(res => {
+      this.exxclusive = res;
+      console.log("service setvsi", this.exxclusive)
     })
   }
 

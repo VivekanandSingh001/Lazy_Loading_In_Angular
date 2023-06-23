@@ -58,3 +58,66 @@ body {
   .sign{
     color: blue;
   }
+
+
+  .header {
+    background-color: skyblue;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header__title {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header__nav {
+    margin-top: 20px;
+  }
+  
+  .header__menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header__item {
+    margin: 0 10px;
+  }
+  
+  .header__link {
+    text-decoration: none;
+  }
+  
+  .header__badge {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ff5500;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header__badge.exclusive1 {
+    background-color:green;
+  }
+  
+  .header__badge.semi-exclusive {
+    background-color: #007bff;
+  }
+  
+  .header__badge.no-exclusive {
+    background-color: #999;
+  }
+  
+  .header__badge:hover {
+    background-color: green;
+  }
+  
+  .active .header__badge {
+    background-color: #e64d00;
+  }
+  

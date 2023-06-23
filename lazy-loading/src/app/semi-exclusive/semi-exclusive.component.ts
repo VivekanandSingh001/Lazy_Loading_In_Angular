@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ExclusiveService } from '../exclusive.service';
 
 @Component({
   selector: 'app-semi-exclusive',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./semi-exclusive.component.css']
 })
 export class SemiExclusiveComponent {
-
+  constructor(private exc:ExclusiveService){
+  }
+    ngOnInit() {
+      this.exc.exclusive.next(false);
+    }
 }

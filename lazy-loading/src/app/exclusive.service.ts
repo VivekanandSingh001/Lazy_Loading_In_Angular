@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ExclusiveService {
-exclusive=new Subject<boolean>();
+exclusive=new BehaviorSubject<boolean>(true);
   constructor() { 
-    console.log("service setvsi",this.exclusive)
   }
 }

@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
       if (users) {
         console.log("loginBool", this.loginBool);
         localStorage.setItem('isLoggedIn', JSON.stringify(this.loginBool))
+        localStorage.setItem('Role', JSON.stringify(users.role))
         alert("Login Successfull");
         this.loginForm.reset();
           this.router.navigate(['home/Home']);

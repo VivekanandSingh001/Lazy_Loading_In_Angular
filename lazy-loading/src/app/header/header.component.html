@@ -1,28 +1,35 @@
 <header class="header">
-    <h1 class="header__title">Welcome to My App</h1>
-    <li >
-        <a >
-          <span class="header__badge exclusive1" *ngIf="exclusive">Exclusive</span>
+  <h1 class="header__title">Welcome to My App</h1>
+    <a>
+      <span class="header__badge exclusive1" *ngIf="exxclusive">Exclusive</span>
+    </a>
+    <nav>
+    <ul class="header__menu">
+      <li>
+        <a routerLink="/exclusive" routerLinkActive="active" class="header__link">
+          <span class="header__badge exclusive">Exclusive</span>
         </a>
       </li>
-    <nav >
-      <ul class="header__menu">
-        <li >
-          <a routerLink="/exclusive" routerLinkActive="active" class="header__link">
-            <span class="header__badge exclusive">Exclusive</span>
-          </a>
-        </li>
-        <li >
-          <a routerLink="/semi-exclusive" routerLinkActive="active" class="header__link">
-            <span class="header__badge semi-exclusive">Semi-Exclusive</span>
-          </a>
-        </li>
-        <li >
-          <a routerLink="/no-exclusive" routerLinkActive="active" class="header__link">
-            <span class="header__badge no-exclusive">No Exclusive</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  
+      <li>
+        <a routerLink="/semi-exclusive" routerLinkActive="active" class="header__link">
+          <span class="header__badge semi-exclusive">Semi-Exclusive</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/no-exclusive" routerLinkActive="active" class="header__link">
+          <span class="header__badge no-exclusive">No Exclusive</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/dataTable" routerLinkActive="active" class="header__link">
+          <span class="header__badge no-exclusive">Data Table</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/login/Login" routerLinkActive="active" class="header__link">
+          <span class="header__badge exclusive">Login</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

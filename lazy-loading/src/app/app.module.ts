@@ -10,6 +10,9 @@ import { HeaderComponent } from './header/header.component';
 import { ExclusiveComponent } from './exclusive/exclusive.component';
 import { SemiExclusiveComponent } from './semi-exclusive/semi-exclusive.component';
 import { NoExclusiveComponent } from './no-exclusive/no-exclusive.component';
+import { ExclusiveService } from './exclusive.service';
+import { HttpClientModule } from '@angular/common/http';
+import { DataTableComponent } from './data-table/data-table.component';
 
 @NgModule({
   declarations: [
@@ -17,15 +20,17 @@ import { NoExclusiveComponent } from './no-exclusive/no-exclusive.component';
     HeaderComponent,
     ExclusiveComponent,
     SemiExclusiveComponent,
-    NoExclusiveComponent
+    NoExclusiveComponent,
+    DataTableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ExclusiveService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
