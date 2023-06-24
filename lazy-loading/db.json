@@ -192,7 +192,7 @@
   ],
   "signUpUsers": [
     {
-      "fullName": "abcd",
+      "fullName": "Vivek",
       "email": "a@abc.com",
       "password": "1234",
       "mobile": "074474747747",
@@ -200,7 +200,7 @@
       "role":"admin"
     },
     {
-      "fullName": "abcd",
+      "fullName": "VivekSingh",
       "email": "ab@abc.com",
       "password": "1234",
       "mobile": "074474747747",
@@ -208,7 +208,7 @@
       "role":"admin"
     },
     {
-      "fullName": "abcde",
+      "fullName": "Vivek_Singh",
       "email": "abc@abc.com",
       "password": "1234",
       "mobile": "074474747747",
