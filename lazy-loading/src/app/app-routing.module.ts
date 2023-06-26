@@ -4,6 +4,8 @@ import { ExclusiveComponent } from './exclusive/exclusive.component';
 import { SemiExclusiveComponent } from './semi-exclusive/semi-exclusive.component';
 import { NoExclusiveComponent } from './no-exclusive/no-exclusive.component';
 import { DataTableComponent } from './data-table/data-table.component';
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
+import { NgOnChangesChildComponent } from './ng-on-changes-child/ng-on-changes-child.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'login/Login',pathMatch:'full'},
@@ -11,6 +13,8 @@ const routes: Routes = [
   {path:'semi-exclusive',component:SemiExclusiveComponent},
   {path:'no-exclusive',component:NoExclusiveComponent},
   {path:'dataTable',component:DataTableComponent},
+  {path:'lifeCycle',component:LifeCycleHooksComponent},
+  {path:'changeChild',component:NgOnChangesChildComponent},
   {
     path:"register",loadChildren:()=>import("../app/register/register.module").then(mod=>mod.RegisterModule)
   },

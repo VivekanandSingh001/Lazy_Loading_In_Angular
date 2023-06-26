@@ -1,0 +1,24 @@
+<div>
+    <p>life-cycle-hooks works!</p>
+
+    <a routerLink="/login/Login" routerLinkActive="active" class="header__link">
+        <span class="header__badge semi-exclusive">Login</span>
+    </a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <a routerLink="/changeChild" routerLinkActive="active" class="header__link">
+        <span class="header__badge semi-exclusive">Child Component</span>
+    </a>
+    <hr>
+
+    <input type="text" (blur)="Click($event)">
+    <hr>
+
+    Name <input type="text" [(ngModel)]="name"><br>
+    Price <input type="text" [(ngModel)]="price"><br>
+
+    <button type="button" (click)="clickMe()">Click</button><br>
+
+    <app-ng-on-changes-child [dataValue]="dataa" [product]="product">
+        <p #child>Hii, I am From Parent Component of LifeCycle Hook</p>
+    </app-ng-on-changes-child>
+</div>
